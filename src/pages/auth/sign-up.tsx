@@ -30,7 +30,7 @@ export function SignUp() {
     try {
       await new Promise((resolve) => setTimeout(resolve, 3000))
       console.log(data)
-      toast.success('Restaurant cadastrado com sucesso!', {
+      toast.success('Restaurante cadastrado com sucesso!', {
         action: {
           label: 'Login',
           onClick: () => {
