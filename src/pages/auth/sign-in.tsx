@@ -30,6 +30,7 @@ export function SignIn() {
   async function handleSignIn(data: SignInForm) {
     try {
       await authenticate({ email: data.email })
+      console.log(data.email)
       toast.success('Enviamos um link de autenticação para o seu e-mail.', {
         action: {
           label: 'Reenviar',
